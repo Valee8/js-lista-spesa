@@ -6,6 +6,8 @@
 
 const listaSpesa = ["Pane", "Pasta", "Insalata", "Carne"];
 
+const button = document.getElementById("button");
+
 // for (let i = 0; i < listaSpesa.length; i++) {
 //     document.getElementById("lista-spesa").innerHTML += `
 //         <li>${listaSpesa[i]}</li>`;
@@ -20,3 +22,18 @@ while (i < listaSpesa.length) {
 
     i++;    
 }
+
+button.addEventListener("click",
+    function() {
+
+        listaSpesa.push(document.getElementById("input").value);
+
+        while (i < listaSpesa.length) {
+
+            document.getElementById("lista-spesa").innerHTML += `
+                <li>${listaSpesa[i]}</li>`;
+
+            i++;    
+        }
+    }
+);
