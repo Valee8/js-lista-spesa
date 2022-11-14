@@ -5,3 +5,8 @@
 // l’utente può inserire al volo elementi alla lista.
 
 const listaSpesa = ["Pane", "Pasta", "Insalata", "Carne"];
+
+for (let i = 0; i < listaSpesa.length; i++) {
+    document.getElementById("lista-spesa").innerHTML += `
+        <li>${listaSpesa[i]}</li>`;
+}
