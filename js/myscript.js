@@ -28,12 +28,7 @@ button.addEventListener("click",
 
         listaSpesa.push(document.getElementById("input").value);
 
-        while (i < listaSpesa.length) {
-
-            document.getElementById("lista-spesa").innerHTML += `
-                <li>${listaSpesa[i]}</li>`;
-
-            i++;    
-        }
+        document.getElementById("lista-spesa").innerHTML += `
+        <li>${listaSpesa[i]}</li>`;
     }
 );
