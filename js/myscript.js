@@ -6,7 +6,17 @@
 
 const listaSpesa = ["Pane", "Pasta", "Insalata", "Carne"];
 
-for (let i = 0; i < listaSpesa.length; i++) {
+// for (let i = 0; i < listaSpesa.length; i++) {
+//     document.getElementById("lista-spesa").innerHTML += `
+//         <li>${listaSpesa[i]}</li>`;
+// }
+
+let i = 0;
+
+while (i < listaSpesa.length) {
+
     document.getElementById("lista-spesa").innerHTML += `
         <li>${listaSpesa[i]}</li>`;
+
+    i++;    
 }
